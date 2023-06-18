@@ -1,3 +1,13 @@
+stat={}
+for i in gyumolcsok:
+    d=str(i.tomeg//10)+'t'
+    if d in stat:
+        stat[d]+=1
+    else:
+        stat[d]=1
+for i,j in stat.items():
+    print(f'{i} -> {j}')
+
 2.SZEMESZTER 5. MODUL
 copy running-config startup-config; vagy copy run start
 vagy
